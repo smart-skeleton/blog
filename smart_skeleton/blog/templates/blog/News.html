@@ -1,0 +1,51 @@
+
+{% extends "blog/base.html" %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+
+
+{% block content %}
+
+<h1>Smart Skeleton</h1>
+
+<p>
+<p><h2>L'IA dans Smart Skeleton</h2></p>
+<img class="resize" src="{% static 'blog/images/IA.jpg' %}"/><br>
+Dans Smart Skeleton, il y a le mot Smart...<br>
+Mais qu'est ce qui est Smart dans Smart Skeleton?<br>
+Nous avons choisi d'implémenter une machine learning dans un petit calculateur...<br>
+ la toute nouvelle framboise Raspy Zéro W<br>
+Une solution économique et raspberry <br>
+</p>
+
+
+
+<p>
+<p><h2>Capteurs de forces</h2></p>
+<img class="resize" src="{% static 'blog/images/FSR.jpg' %}"/><br>
+Premiers tests des capteurs de forces FSR .<br>
+ Pour plus d'informations sur le fonctionnement de ce capteur, <br>
+n’hésitez pas à jeter un coup d’œil à la datasheet disponible <br>
+via ce lien : http://www.trossenrobotics.com/…/2010-10-26-DataSheet-FSR40…<br>
+ou à nous poser vos questions :)<br>
+</p>
+
+
+
+<p>
+<p><h2>PREMIER prototype</h2></p>
+<img class="resize" src="{% static 'blog/images/Premier_Prototype_1.jpg' %}"/><br>
+Vous l'attendiez ?!! *_* Le voici, notre PREMIER prototype Smart Skeleton,<br>
+nous avons utilisé 5 servo-moteurs dont voici<br>
+ la datasheet http://akizukidenshi.com/download/ds/towerpro/SG90.pdf<br>
+N’hésitez pas à poser vos questions<br>
+</p>
+
+
+
+
+
+
+{% endblock %}
+

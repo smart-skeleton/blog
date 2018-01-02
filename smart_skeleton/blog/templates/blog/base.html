@@ -1,0 +1,46 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+   <link rel="stylesheet" href="/media/css/style.css" />
+
+   <title>{% block title %}Smart Skeleton{% endblock %}</title>
+
+</head>
+
+<body>
+
+<header></header>
+
+
+
+       {% block nav %}
+
+       <nav id="nav">
+	<ul>
+		<li class="current"> <a href="{% url 'index' %}"> Home      </a> </li> 
+		<li> <a href="{% url 'news' %}" >                 News      </a> </li>
+		<li> <a href="{% url 'data' %}">	           Data      </a> </li>
+		<li> <a href="{% url 'contact' %}">               Contact   </a> </li> 
+	</ul> 
+	</nav>
+
+       {% endblock %}
+
+
+   <section id="content">
+
+       {% block content %}{% endblock %}
+
+   </section>
+
+<footer>&copy; Smart Skeleton</footer>
+
+</body>
+
+</html>

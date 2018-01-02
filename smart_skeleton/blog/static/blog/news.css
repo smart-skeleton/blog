@@ -1,0 +1,27 @@
+body{
+    text-align:center;
+}
+
+ul{
+    list-style:none;
+    border:1px solid black;
+    margin:0px;
+    padding:0px;
+    margin:auto;
+    width:250px;
+    background-color:#d6e1f1;
+}
+
+li{
+    display:block;
+    width:250px;
+    font-family:monospace;
+    font-size:30px;
+    height:50px;
+}
+
+.id{
+   font-size:40px;
+   color:red;
+   float:left;
+}

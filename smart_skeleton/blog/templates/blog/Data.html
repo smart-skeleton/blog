@@ -1,0 +1,26 @@
+
+{% extends "blog/base.html" %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+
+
+{% block title %}Data - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+<table>
+<td><p><b>Date</b></p></td>
+<td><p><b>Valeur EMG</b></p></td>
+{% for datas in data %}
+
+
+   <tr>
+	<td><p>{{datas.date}}</p></td>
+	<td><p>{{datas.valeur}}</p></td>
+{% empty %}
+    <p>Aucun data.</p>
+{% endfor %}
+   </tr>
+</table>
+{% endblock %}
